@@ -1,12 +1,13 @@
 console.log('ok');
 
- 
+
 var ham = document.querySelector('.menu-controller'),
     menu = document.querySelector('.main-menu');
 
 ham.addEventListener( 'click' , function() {
   menu.classList.toggle('is-open');
 });
+
 
 $('.slider-wrapper').slick({
   dots: true,
