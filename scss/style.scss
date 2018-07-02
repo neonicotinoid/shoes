@@ -3,9 +3,11 @@
 @import '_mixins/breakpoints';
 @import '_mixins/font-face';
 @import '_fonts';
+
 @include font-face('Aller', '../fonts/aller/Aller_Std_Rg');
 @include font-face('Aller', '../fonts/aller/Aller_Std_Bd', 500);
 @include font-face('Aller', '../fonts/aller/Aller_Std_Lt', 300);
+
 html {
   font-size: 62.5%; // now 1rem = 10px;
   -webkit-font-smoothing: subpixel-antialiased;
@@ -43,7 +45,7 @@ body {
 }
 
 .logo {
-  color: rgb(87, 197, 160);
+  color: $green;
   text-transform: uppercase;
   font-size: 26px;
 }
@@ -74,7 +76,7 @@ body {
     color: rgb(126, 126, 126);
     transition: color .2s linear;
     &:hover {
-      color: rgb(87, 197, 160);
+      color: $green;
     }
   }
 }
@@ -239,8 +241,6 @@ body {
   }
 }
 
-.s-shares {}
-
 .share-btn {
   display: inline-block;
   width: 40px;
@@ -279,7 +279,7 @@ body {
     background-repeat: no-repeat;
     transition: all .2s linear;
     &.slick-active {
-      background: rgb(87, 197, 160);
+      background: $green;
     }
   }
 }
@@ -364,15 +364,12 @@ body {
 .badge {
   display: inline;
   position: relative;
-  margin-top: 0px;
   padding: 4px;
   background: #eee;
   font-size: 13px;
-  height: 20px;
-  width: 20px;
   border-radius: 4px;
   &--shopcart {
-    background-color: rgb(87, 197, 160);
+    background-color: $green;
     color: #fff;
   }
 }
@@ -500,7 +497,7 @@ body {
     line-height: 68px;
     text-align: center;
     top: -20px;
-    background: rgb(87, 197, 160);
+    background: $green;
     color: #fff;
     font-size: 13px;
     font-weight: 500;
@@ -552,7 +549,7 @@ body {
       color: #ccc;
       transition: color .2s linear;
       &:hover {
-        color: rgb(87, 197, 160);
+        color: $green;
       }
     }
   }
@@ -628,7 +625,7 @@ body {
   &__date {
     width: 26px;
     height: 26px;
-    background-color: rgb(87, 197, 160);
+    background-color: $green;
     text-align: center;
     padding: 5px;
     color: #fff;
@@ -660,6 +657,7 @@ body {
 }
 
 // Footer 
+
 .dark-footer {
   background-color: rgb(36, 36, 36);
   padding: 50px 0 45px 0;
@@ -709,7 +707,7 @@ body {
   font-size: 12px;
   margin-bottom: 15px;
   a {
-    color: rgb(87, 197, 160);
+    color: $green;
     text-decoration: none;
   }
 }
@@ -762,6 +760,10 @@ body {
   color: #fff;
   font-size: 12px;
   font-weight: 400;
+  box-sizing: border-box;
+  &:focus {
+    border: 1px solid $green;
+  }
 }
 
 .f-submit {
@@ -777,7 +779,7 @@ body {
   cursor: pointer;
   transition: background-color .2s;
   &:hover {
-    background-color: rgb(87, 197, 160);
+    background-color: $green;
   }
 }
 
@@ -802,7 +804,7 @@ body {
     margin-right: 0;
   }
   &:hover {
-    color: rgb(87, 197, 160);
+    color: $green;
   }
 }
 
@@ -836,7 +838,7 @@ body {
     text-decoration: none;
     transition: color .2s linear;
     &:hover {
-      color: rgb(87, 197, 160);
+      color: $green;
     }
   }
 }
