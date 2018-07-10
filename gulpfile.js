@@ -23,10 +23,10 @@ var paths = {
         img: 'img/**/*.*',
     },
     dist: {
-        html: './build/',
-        css: './build/css/',
-        js: 'build/js/',
-        img: './build/img/',
+        html: './docs/',
+        css: './docs/css/',
+        js: 'docs/js/',
+        img: './docs/img/',
     }
 }
 
@@ -73,7 +73,7 @@ gulp.task('jsugly', function () {
     gulp.src([
         'libs/jquery/jquery.min.js',
         'libs/slick-carousel/slick/slick.min.js',
-        'js/dev-navigation.js',
+        // 'js/dev-navigation.js',
         'js/scripts.js', // Always at the end
     ])
         .pipe(srcmaps.init())
